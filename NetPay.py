@@ -16,8 +16,10 @@ employeetable = PrettyTable()
 employeetable.field_names = ['Name', 'ID Number', 'Department', 'Job Title', 'Monthly Salary']
 
 employeetable.add_row([employee1.get_name(), employee1.get_id(), employee1.get_department(), employee1.get_job_title(), "${:0,.2f}".format(employee1.get_salary())])
+print('Employee Table')
 print(employeetable)
-
+print()
+print('Charge Table')
 pdtable = PrettyTable()
 
 pdtable.field_names = ['Description', 'Date', 'Charge', 'EmployeeID']
